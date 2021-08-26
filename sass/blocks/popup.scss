@@ -1,0 +1,60 @@
+.popup-overlay--hidden {
+  overflow: hidden;
+}
+
+.popup {
+  position: relative;
+}
+
+.popup--no-scroll {
+  overflow: hidden;
+}
+
+.popup__box {
+  display: none;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.popup__box--no-js {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.popup__close-btn {
+  position: absolute;
+  top: 100%;
+}
+
+.popup__close-btn--search {
+  display: none;
+}
+
+.popup__child {
+  position: absolute;
+  z-index: 1;
+}
+
+.popup--focus .popup__box, 
+.popup--over .popup__box,
+.popup--focus .popup__child, 
+.popup--over .popup__child {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+@media (min-width: $tablet) {
+  .popup__close-btn--search {
+    display: block;
+  }
+
+  .popup__close-btn--none {
+    display: none;
+  }
+}
+
+

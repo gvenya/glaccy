@@ -1,0 +1,216 @@
+<header class="page-header">
+  <a href="#" class="page-header__logo  logo">
+    <svg width="154" height="64"><use xlink:href="#header-logo"></use></svg>
+  </a>
+  <button type="button" class="page-header__btn  page-header__btn--open  page-header__btn--no-js">
+    <span class="visually-hidden">Открыть меню<!--Закрыть меню--></span>
+  </button>
+  <nav class="page-header__nav  main-nav">
+    <ul class="main-nav__list  site-list">
+      <li class="main-nav__item  site-list__item  site-list__item--dropdown  dropdown">
+        <a href="https://webaim.org/" class="main-nav__link  site-list__link site-list__link--active  site-list__link--dropdown  dropdown__header  dropdown__focusable">
+          <span class="underlined  underlined--current">Каталог</span>
+        </a>
+        <div class="dropdown__box  site-list__dropdown-wrap">
+          <button type="button" class="dropdown__close-btn  dropdown__close-btn--none  site-list__dropdown-btn">
+            Закрыть меню каталога
+          </button>
+          <ul class="site-list__dropdown  dropdown__child">
+            <li class="site-list__dropdown-item  dropdown__item">
+              <a href="catalogue.html" class="site-list__dropdown-link  site-list__dropdown-link--top  dropdown__focusable">Новинки</a>
+            </li>
+            <li class="site-list__dropdown-item  dropdown__item">
+              <a href="#" class="site-list__dropdown-link  dropdown__focusable"><span class="underlined  underlined--current">Сливочное</span></a>
+            </li>
+            <li class="site-list__dropdown-item  dropdown__item">
+              <a href="catalogue.html" class="site-list__dropdown-link  site-list__dropdown-link--active  dropdown__focusable">Щербеты</a>
+            </li>
+            <li class="site-list__dropdown-item  dropdown__item">
+              <a href="catalogue.html" class="site-list__dropdown-link  dropdown__focusable">Фруктовый</a>
+            </li>
+            <li class="site-list__dropdown-item  dropdown__item">
+              <a href="catalogue.html" class="site-list__dropdown-link  site-list__dropdown-link--bottom  dropdown__focusable">Мелорин</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="main-nav__item  site-list__item">
+        <a href="#" class="main-nav__link  site-list__link">
+          <span class="underlined">Доставка и оплата</span>
+        </a>
+      </li>
+      <li class="main-nav__item  site-list__item">
+        <a href="#" class="main-nav__link  site-list__link">
+          <span class="underlined">О Компании</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="main-nav__list  user-list">
+      <li class="main-nav__item  user-list__item  user-list__item--search  search  popup">
+        <button type="button" class="main-nav__link user-list__link  user-list__link--search  search__btn  popup__header  popup__focusable">
+          Поиск
+        </button>
+        <div class="user-list__popup  user-list__popup--search  search__wrap  popup__box  popup__box--no-js">
+          <button type="button" class="popup__close-btn  popup__close-btn--search  popup__close-btn--none  user-list__popup-btn  user-list__popup-btn--search"><!--  popup__close-btn--none -->
+            Закрыть модальное окно
+          </button>
+          <form action="https://echo.htmlacademy.ru"  class="search__form  popup__child" method="get" autocomplete="off">
+            <div class="search__form-wrap">
+              <button type="submit" class="search__submit"></button>
+              <p class="search__input-wrap">
+                <input class="search__input" type="text" id="search-input" name="search-input" placeholder="Что ищем?">
+              </p>
+            </div>
+          </form>
+        </div>
+      </li>
+      <li class="main-nav__item  user-list__item  user-list__item--login  login  popup">
+        <a href="https://webaim.org/techniques/forms/controls" class="main-nav__link user-list__link  user-list__link--login  login__link  popup__header  popup__focusable">
+          <svg class="user-list__icon  user-list__icon--login" width="21" height="19">
+            <use xlink:href="#icon-login"></use>
+          </svg>
+          <span class="user-list__link-text">Вход</span>
+        </a>
+        <div class="user-list__popup  user-list__popup--login  login__wrap  popup__box">
+          <button type="button" class="popup__close-btn  user-list__popup-btn  popup__close-btn--none">
+            Закрыть модальное окно
+          </button>
+          <form action="https://echo.htmlacademy.ru"  class="login__form  popup__child" method="post" autocomplete="off">
+            <p class="login__input-wrap">
+              <input class="login__input  login__input--email" type="text" id="login-email" name="login-email" placeholder="Электронная почта" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{1,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required>
+            </p>
+            <p class="login__input-wrap">
+              <input class="login__input" type="text" id="login-password" name="login-password" placeholder="Пароль" required>
+            </p>
+            <div class="login__footer">
+              <p class="login__footer-btn">
+                <button class="login__submit btn" type="submit">Войти</button>
+              </p>
+              <p class="login__footer-links">
+                <a href="#" class="login__footer-link  link-on-light">Забыли пароль?</a>
+                <a href="#" class="login__footer-link  link-on-light">Новая регистрация</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <!--<div class="login__overlay">
+        </div>-->
+      </li>
+      <li class="main-nav__item  user-list__item  user-list__item--cart  cart  popup">
+        <a href="https://webaim.org/techniques/forms/controls" class="main-nav__link user-list__link  user-list__link--cart  user-list__link--full-cart  cart__link  popup__header  popup__focusable">
+          <svg class="user-list__icon  user-list__icon--cart  user-list__icon--outcart" width="21" height="20">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+          <svg class="user-list__icon  user-list__icon--cart   user-list__icon--incart" width="21" height="20">
+            <use xlink:href="#icon-cart-inside"></use>
+          </svg>
+          <span class="user-list__link-text">
+            <span  class="user-list__cart-num">2</span> 
+            <span class="user-list__cart-text">товара</span>
+          </span><!--Пусто-->
+        </a>
+
+        <div class="user-list__popup  user-list__popup--cart  cart__wrap  popup__box">
+          <button type="button" class="popup__close-btn  popup__close-btn--none  user-list__popup-btn">
+            Закрыть модальное окно
+          </button>
+          <form action="https://echo.htmlacademy.ru"  class="user-list__form  cart__form  popup__child" method="post" autocomplete="off">
+            <ul class="cart__list">
+              <li class="cart__list-line">
+                <div class="cart__btn-wrap">
+                  <button class="cart__btn" type="button">Удалить</button>
+                </div>
+                <div class="cart__img-wrap">
+                  <img class="cart__img" src="img/yellow-cart.jpg" width="33" height="33">
+                </div>
+                <div class="cart__title"><!--get from added item: array of added items-->
+                  Пломбир с апельсиновым джемом
+                </div>
+                <div class="cart__calculation">
+                  <span class="cart__amount">150</span><!--get from added 
+                  item: array of added items-->
+                  <span class="cart__unit">кг</span>
+                  <span class="cart__multiply">x</span>
+                  <span class="cart__price">300</span><!--get from added item: array of added items-->
+                  <span class="cart__currency">руб.</span>
+                </div>
+                <div class="cart__result">
+                  <span class="cart__sum">45 000</span>
+                  <span class="cart__currency">руб.</span>
+                </div>
+              </li>
+              <li class="cart__list-line">
+                <div class="cart__btn-wrap">
+                  <button class="cart__btn" type="button">Удалить</button>
+                </div>
+                <div class="cart__img-wrap">
+                  <img class="cart__img" src="img/pink-cart.jpg" width="33" height="33">
+                </div>
+                <div class="cart__title">
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </div>
+                <div class="cart__calculation">
+                  <span class="cart__amount">1,5</span><!--get from added item: array of added items-->
+                  <span class="cart__unit"> кг</span>
+                  <span class="cart__multiply">x</span>
+                  <span class="cart__price">450</span><!--get from added item: array of added items-->
+                  <span class="cart__currency">руб.</span>
+                </div>
+                <div class="cart__result">
+                  <span class="cart__sum">675</span>
+                  <span class="cart__currency">руб.</span>
+                </div>
+              </li>
+              <li class="cart__list-line">
+                <div class="cart__btn-wrap">
+                  <button class="cart__btn" type="button">Удалить</button>
+                </div>
+                <div class="cart__img-wrap">
+                  <img class="cart__img" src="img/pink-cart.jpg" width="33" height="33">
+                </div>
+                <div class="cart__title">
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </div>
+                <div class="cart__calculation">
+                  <span class="cart__amount">1,5</span><!--get from added item: array of added items-->
+                  <span class="cart__unit"> кг</span>
+                  <span class="cart__multiply">x</span>
+                  <span class="cart__price">450</span><!--get from added item: array of added items-->
+                  <span class="cart__currency">руб.</span>
+                </div>
+                <div class="cart__result">
+                  <span class="cart__sum">675</span>
+                  <span class="cart__currency">руб.</span>
+                </div>
+              </li>
+            </ul>
+            <div class="cart__total">
+              <span>Итого: </span>
+              <span class="cart__total-num"></span>
+              <span class="cart__currency"> руб.</span>
+            </div>
+            <button class="btn cart__submit" type="submit">Оформить заказ</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </nav>
+<div class="page-header__footer">
+  <ul class="page-header__breadcrumbs breadcrumbs">
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link link-on-dark underlined underlined--on-dark" href="main.html">Главная</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link link-on-dark underlined underlined--on-dark" href="catalogue.html">Каталог</a>
+    </li>
+    <li class="breadcrumbs__item"><a class="breadcrumbs__link link-on-dark--current" href="">Сливочное мороженое</a></li>
+  </ul>
+
+  <p class="page-header__contacts  contacts">
+    <div>С 10 до 20, ежедневно</div>
+    <a class="page-header__phone" href="tel:+78124502525">8 812 450-25-25</a>
+  </p>
+</div>
+</header>
+

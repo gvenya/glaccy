@@ -1,0 +1,37 @@
+.copyright__logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+  
+  font-size: 0;
+}
+
+.copyright__icon {
+  display: block;
+  fill: #fff;
+  /*display: inline-block;*/
+}
+
+.copyright__logo:hover .copyright__icon,
+.copyright__logo:focus .copyright__icon {
+  fill: #f6b5a5;
+}
+
+.copyright__logo:active .copyright__icon {
+  fill: #d07058;
+}
+
+.copyright__text {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+
+  font-size: 12px;
+  color: #fefefe;
+}
+
+@media (min-width: $desktop) {
+}
+
+@media (min-width: $desktopBig) {
+}

@@ -1,0 +1,266 @@
+.promo {
+  position: relative;
+
+  width: 100%;
+  max-width: 1500px;
+  min-width: $mobileMin;
+  height: auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  /*padding-top: 30px;*/
+  padding-top: 20px;
+  box-sizing: border-box;
+
+  z-index: 1;
+
+  /*background-image: url("http://habrastorage.org/files/97d/5df/2eb/97d5df2ebcf24bf489a37010e8157862.png");*/
+  
+}
+
+.promo__box {
+  position: relative;
+}
+
+.promo__wrap {
+  /*position: relative;*/
+
+  width: 100%;
+  min-width: $mobileMin;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  
+  overflow: hidden;
+  border-bottom: 1px solid transparent;
+
+  /*transition: background-color 0.1s ease, opacity 0.45s ease 0s, transform 0.9s ease 0s;*/
+}
+
+.promo__list {
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  min-width: $mobileMin;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: content-box;
+
+
+  border-bottom: 1px solid transparent;
+  transition-property: transform;
+}
+
+.promo__item {
+  /*width: 100%;*/
+  /*height: 856px;height: 878px;height: auto;*/
+  flex-shrink: 0;
+  width: 100%;
+  min-width: $mobileMin;
+  margin: 0;
+  padding: 0;
+
+  border-bottom: 1px solid transparent;
+  overflow: hidden;
+  transition-property: transform;
+
+  /*background-image: url("http://habrastorage.org/files/97d/5df/2eb/97d5df2ebcf24bf489a37010e8157862.png");*/
+}
+
+.promo__heading {
+  position: absolute;
+  /*bottom: 335px;bottom: 405px;/*bottom: 45%;*/
+  top: 395px;top: 55%;
+  left: 50%;
+
+
+  width: 900px;width: 100%;
+  margin: 0;
+  padding: 0 25px;
+  box-sizing: border-box;
+  /*background-color: red;*/
+
+  font-size: 16px;/*font-size: 50px;*/
+  line-height: 1.05;
+  font-weight: 700;
+  text-align: center;
+
+  transform: translateX(-50%);
+}
+
+.promo__pagination {
+  position: absolute;
+  /*bottom: 0px;bottom: 348px;*//*bottom: 38.6666%;*/
+  top: 77%;
+  left: $sizeM;
+
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  flex-basis: 60px;
+  justify-content: space-between;
+  min-width: 60px;
+  /*width: 100px;
+  height: 20px;*/
+
+  /*background-color: rgba(100, 10, 140, 0.5);*/
+}
+
+.promo__btn-wrap {
+  position: absolute;
+  top: 9.7vw;top: 8.7%;top: 12%;
+
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.promo__btn {
+  /*
+  position: absolute;
+  top: 9.7vw;top: 8.7%;
+  left: 50%;
+  z-index: 110;*/
+  /*bottom: 295px;-- old*/
+
+  display: block;
+  flex-shrink: 0;
+  flex-grow: 1;
+  width: auto;/*width: 65%;width: 150px;*/
+  padding: 8px 15px 8px 15px;
+
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+
+.promo__img-wrap {
+  position: relative;
+
+  width: 100%;
+  margin: 0 auto;
+  /*background-color: blue;background-image: url("http://habrastorage.org/files/97d/5df/2eb/97d5df2ebcf24bf489a37010e8157862.png");*/
+  /*width: 900px;width: 1080px;*/
+}
+
+
+.promo__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 320px) {
+  .promo__heading {
+    font-size: calc( (100vw - 320px)/(519 - 320) * (26 - 17) + 17px);
+  }
+
+  .promo__btn {
+    width: auto;
+
+    font-size:  calc( (100vw - 320px)/(519 - 320) * (26 - 14) + 14px);
+  }
+}
+
+@media (min-width: 520px) {
+  .promo__heading {
+    padding: 0 15%;
+
+    font-size: 30px;
+  }
+
+  .promo__btn {
+    font-size:  26px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .promo {
+    padding-top: 0;
+    padding-bottom: 5px;/*75px;*/
+  }
+
+  .promo__img-wrap {
+    position: relative;
+
+    width: 100%;
+    height: 883px;/*881px*/
+
+    overflow: hidden;
+    /*background-color: blue;background-image: url("http://habrastorage.org/files/97d/5df/2eb/97d5df2ebcf24bf489a37010e8157862.png");*/
+    /*width: 900px;width: 1080px;*/
+  }
+
+  .promo__img {
+    position: absolute;
+    top: -130px;top: 0;
+    left: 47.5%;
+
+    display: block;
+    /*width: auto;width: 200%;*/
+    /*height: auto;*/
+    width: auto;
+
+    transform: translateX(-50%);
+  }
+
+  .promo__img--js {
+    top: -130px;
+  }
+
+  .promo__btn-wrap {
+    top: 555px;
+  }
+
+
+  .promo__btn {
+    /*top: 557px;*/
+    max-width: 550px;max-width: 75%;
+    padding: 9px 30px 12px 30px;
+
+    font-size: 30px;
+  }
+
+  .promo__heading {
+    top: 400px;
+
+    padding: 0 90px;
+
+    font-size: 50px;
+  }
+
+  .promo__pagination {
+    top: 584px;
+  }
+
+  .promo__banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: translateX(-50%);*/
+    z-index: 10;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .promo__heading {
+    font-size: 60px;
+  }
+
+  .promo__btn {
+    padding: 13px 40px 16px 40px;
+
+    font-size: 32px;
+  }
+}
+
+@media (min-width: $desktopBig) {
+  .promo__pagination {
+    left: $sizeL;
+  }
+}

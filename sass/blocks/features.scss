@@ -1,0 +1,137 @@
+.features {
+  width: 100%;
+  max-width: 1500px;
+  min-width: $mobileMin;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 $sizeM;
+  box-sizing: border-box;
+
+  color: #323232;
+}
+
+.features__wrap {
+  width: 100%;
+  padding: 20px 20px 15px 20px;
+  box-sizing: border-box;
+
+  background-image: url("../img/waffle.jpg");
+  border-radius: 16px;
+}
+
+.features__title {
+  margin-top: 0;
+
+  font-size: 18px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+  
+  /*48.9189%;*//*48.91891891891892%;*/
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+  padding-top: 7px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+}
+
+.features__item:nth-child(5) {
+  background-color: lightcoral;
+}
+
+.features__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background-size: 100%;/*contain;*/
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border: 2px solid #323232; */
+}
+
+.features__item--ice-cream::before {
+  background-image: url("../img/ice-cream.svg");
+}
+
+.features__item--leaf::before {
+  background-image: url("../img/leaf.svg");
+}
+
+.features__item--cow::before {
+  background-image: url("../img/cow.svg");
+}
+
+.features__item--thermometer::before {
+  background-image: url("../img/thermometer.svg");
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+@media (min-width: $mobile) {
+
+}
+
+@media (min-width: $tablet) {
+  .features__title {
+    font-size: 24px;
+  }
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    flex-basis: 48.5%;/*48.9189%;*//*48.91891891891892%;*/
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+  
+    font-size: 16px;
+  }
+
+  .features__item::before {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__item {
+    flex-basis: 48.78048780487805%;/*48.91891891891892%;*/
+  }
+}
+
+@media (min-width: $desktopBig) {
+  .features {
+    padding: 0 $sizeL;
+  }
+
+  .features__item {
+    flex-basis: 48.9189%;/*48.91891891891892%;*/
+  }
+}

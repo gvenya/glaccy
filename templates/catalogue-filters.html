@@ -1,0 +1,86 @@
+<section class="catalogue-filters">
+  <h1 class="catalogue-filters__header"><span class="catalogue-filters__title--type">Сливочное</span> мороженое</h1>
+  <form class="catalogue-filters__form" action="#" method="get" autocomplete="off">
+    <!--action="https://js.dump.academy/keksobooking"-->
+    <div class="catalogue-filters__box  catalogue-filters__box--select" role='group'>
+      <label class="catalogue-filters__title" for="sorting">
+        Сортировка:
+      </label>
+      <div class="filter-select-wrap">
+        <select class="catalogue-filters__filter catalogue-filters__select filter-select" id="sorting" name="sorting">
+          <option value="popular">по популярности</option>
+          <option value="price">по цене</option>
+          <option value="fat">по жирности</option>
+          <!--<option value="sugar-content">по содержанию сахару</option>-->
+        </select>
+      </div>
+    </div>
+
+    <div class="catalogue-filters__box catalogue-filters__box--slider" role='group' aria-labelledby="prices">
+      <div class="catalogue-filters__title" id="prices">
+        Цена: <span id="price-min"></span>100</span> руб. - <span id="price-max"></span>500</span> руб.
+      </div>
+      <!--<input class="catalogue-filters__filter filter-slider" id="price-slider" type="range" min="0" max="600">-->
+      <!--<div class="slider-box"><!--catalogue-filters__filter -->
+        <!--
+        <input type="range" min="0" max="600" value="100" class="slider" id="myRangeMin">
+        <input type="range" min="0" max="600" value="500" class="slider--absolute" id="myRangeMax">
+      </div>-->
+      <div class="catalogue-filters__filter catalogue-filters__slider">
+        <div class="filter-slider" role="group" aria-labelledby='multi-lbl'>
+          <div id='multi-lbl' class="visually-hidden">Price range slider:</div>
+          <label class='sr-only visually-hidden' for="a" id="label-a"></label>
+          <input type="range" min="0" max="600" value="100" id="a">
+          <label class='sr-only visually-hidden' for="b" id="label-b"></label>
+          <input type="range" min="0" max="600" value="500" id="b">
+        </div>
+      </div>
+    </div>
+
+    <div class="catalogue-filters__box catalogue-filters__box--radio" role='group' aria-labelledby="fats">
+      <div class="catalogue-filters__title" id="fats">
+        Жирность:
+      </div>
+      
+      <div class="catalogue-filters__filter catalogue-filters__radio filter-radio">
+        <input class="catalogue-filters__radiobtn visually-hidden" id="fat-0" type="radio" name="fat-content">
+        <label class="catalogue-filters__radio-label" for="fat-0">0%</label>
+
+        <input class="catalogue-filters__radiobtn visually-hidden" id="fat-10" type="radio" name="fat-content">
+        <label class="catalogue-filters__radio-label" for="fat-10">до 10%</label>
+
+        <input class="catalogue-filters__radiobtn visually-hidden" id="fat-30" type="radio" name="fat-content">
+        <label class="catalogue-filters__radio-label" for="fat-30">до 30%</label>
+
+        <input class="catalogue-filters__radiobtn visually-hidden" id="fat-over-30" type="radio" name="fat-content">
+        <label class="catalogue-filters__radio-label" for="fat-over-30">выше 30%</label>
+      </div>
+    </div>
+
+    <div class="catalogue-filters__box catalogue-filters__box--checkbox" aria-labelledby="fillings">
+      <div class="catalogue-filters__title" id="fillings">
+        Наполнители:
+      </div>
+      
+      <div class="catalogue-filters__filter catalogue-filters__checkbox">
+        <input class="catalogue-filters__checkbox visually-hidden" id="chocolate" type="checkbox" name="chocolate">
+        <label class="catalogue-filters__checkbox-label" for="chocolate">шоколадные</label>
+
+        <input class="catalogue-filters__checkbox visually-hidden" id="sugar-topping" type="checkbox" name="sugar-topping">
+        <label class="catalogue-filters__checkbox-label" for="sugar-topping">сахарные присыпки</label>
+
+        <input class="catalogue-filters__checkbox visually-hidden" id="fruit" type="checkbox" name="fruit">
+        <label class="catalogue-filters__checkbox-label" for="fruit">фрукты</label>
+
+        <input class="catalogue-filters__checkbox visually-hidden" id="syrup" type="checkbox" name="syrup">
+        <label class="catalogue-filters__checkbox-label" for="syrup">сиропы</label>
+
+        <input class="catalogue-filters__checkbox visually-hidden" id="jam" type="checkbox" name="jam">
+        <label class="catalogue-filters__checkbox-label" for="jam">джемы</label>
+      </div>
+    </div>
+  </form>
+</section>
+
+
+

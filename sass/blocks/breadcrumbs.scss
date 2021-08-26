@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: bottom;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  margin: 0;
+  padding: 10px 20px 0px 0px;
+
+  background-color: black;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;background-color: darkmagenta;
+}
+
+@media (min-width: $mobile) {
+  
+}
+
+
+@media (min-width: $tablet) {
+  
+}
+
+@media (min-width: $desktopBig) {
+  
+}
+

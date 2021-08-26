@@ -1,0 +1,116 @@
+.search__wrap {
+}
+
+.search__form {
+  width: 100%;
+
+  background-color: #f8f7f4;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.search__form-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.search__input-wrap {
+  flex-grow: 1;
+  width: auto;
+  margin: 0;
+  padding: 0;/*padding: 15px 15px;*/
+  box-sizing: border-box;
+
+  background-color: #f8f7f4;
+  border-radius: 0 50px 50px 0;
+}
+
+.search__input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+
+  background-color: #fff;
+  border: none;
+  border-radius: 0 50px 50px 0;
+}
+
+.search__submit {
+  position: static;
+  /*top: 50%;top: 10px;
+  left: 20px;left: 0;
+  z-index: 12;*/
+  display: block;
+  width: 44px;
+  height: auto;
+  min-width: 32px;
+  min-height: 32px;
+  padding: 0;
+  padding-left: 44px;
+  padding-right: 0px;
+  box-sizing: border-box;
+
+  background-image: url("../img/search-black.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+
+  color: #ffffff;
+
+  border-radius: 50px 0 0 50px;/*certain state*/
+  border: 1px solid #111;
+  /*border-bottom: 1px solid transparent;*/
+}
+
+.search__submit:active {
+  box-shadow: inset 0 2px 1px 0 #696969;
+  background-color: #fff;
+}
+
+.search__submit:focus,
+.search__submit:hover {
+  background-color: #fff;
+}
+
+@media (min-width: $tablet) {
+  .search__input-wrap {
+    width: 100%;
+    padding: 20px 15px;
+
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 0px #333333;
+  }
+
+  .search__submit {
+    position: absolute;
+    top: auto;
+    bottom: calc(100% + 5px);
+    right: 62px;
+    left: auto;
+
+    width: 32px;
+    padding: 0 8px;
+
+    background-color: #ffffff;
+    background-position: 50%;
+    border-radius: 50px;
+    border: 1px solid transparent;
+
+    transform: none;
+  }
+
+  .search__input {
+    padding: 15px 15px;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .search__submit {
+    right: 63px;
+  }
+}

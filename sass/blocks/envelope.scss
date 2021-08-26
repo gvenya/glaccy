@@ -1,0 +1,43 @@
+.envelope {
+  position: relative;
+  width: 560px;
+  height: 220px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  /* padding: 15px 18px 15px 18px; */
+  
+  box-sizing: border-box;
+  background-color: pink;
+
+  border-radius: 16px;
+  border: 6px olive dashed;border: 6px solid transparent;
+  background-clip: padding-box;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  z-index: -1;
+
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+
+  /*background-color: yellow;*/
+  border-radius: 16px;
+
+  background-image: repeating-linear-gradient(
+    135deg,
+    #92cdff 10px,
+    #92cdff 20px,
+    #f8f7f4 20px,
+    #f8f7f4 30px,
+    #fe9e90 30px,
+    #fe9e90 40px,
+    #f8f7f4 40px,
+    #f8f7f4 50px
+  );
+}

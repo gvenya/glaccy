@@ -1,0 +1,38 @@
+.dropdown-overlay--hidden {
+  overflow: hidden;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__box {
+  display: none;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.dropdown__close-btn {
+  position: absolute;
+  top: 100%;
+}
+
+.dropdown__close-btn--none {
+  display: none;
+}
+
+.dropdown__child {
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown--focus .dropdown__box, 
+.dropdown--over .dropdown__box,
+.dropdown--focus .dropdown__child, 
+.dropdown--over .dropdown__child {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}

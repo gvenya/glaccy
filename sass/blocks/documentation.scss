@@ -1,0 +1,48 @@
+.documentation {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: flex-end;*/
+  align-items: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 345px;
+  padding: 0;
+  padding-right: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.documentation__item {
+  position: relative;
+  
+  flex-shrink: 0;
+  padding: 0 8px 7px 20px;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.documentation__item--heart::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+
+  width: 15px;
+  height: 13px;
+
+
+  /* background-color: rosybrown; */
+  background-image: url("../img/heart.svg");
+}
+
+@media (min-width: $tablet) {
+}
+
+@media (min-width: $desktop) {
+}
+
+@media (min-width: $desktopBig) {
+}

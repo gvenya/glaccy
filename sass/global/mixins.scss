@@ -1,0 +1,98 @@
+.underlined {
+  position: relative;
+  padding-bottom: 1px;
+}
+
+.underlined::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.underlined--current::after {
+  background-color: transparent;
+}
+
+.underlined--on-dark:hover::after,
+.underlined--on-dark:focus::after {
+  background-color: #ffbc9e;
+}
+
+.underlined--on-dark:active::after {
+  background-color: #d07058;
+}
+
+.underlined--on-light:hover::after,
+.underlined--on-light:focus::after {
+  background-color: #e84d37;
+}
+
+.underlined--on-light:active::after {
+  background-color: #d81d47;
+}
+
+.btn {
+  font-weight: 700;
+  color: #fff;
+
+  background-image: linear-gradient(to bottom, #e74a35, #f26843);
+  border: none;
+  box-shadow: inset 0 -2px 1px 0 #ac1000;
+  border-radius: 30px;
+
+  cursor: pointer;
+}
+
+.section-margin-b {
+  margin-bottom: 40px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+}
+
+.btn:active {
+  background-image: linear-gradient(to bottom, #d84732, #e1613e);
+  box-shadow: inset 0 2px 1px 0 #ac1000;
+}
+
+.link-on-dark,
+.link-on-dark--current,
+.link-on-dark--current:hover,
+.link-on-dark--current:focus,
+.link-on-dark--current:active {
+  color: #fff;
+}
+
+.link-on-dark:hover,
+.link-on-dark:focus {
+  color: #ffbc9e;
+}
+
+.link-on-dark:active {
+  color: #d07058;
+}
+
+.link-on-light,
+.link-on-light--current,
+.link-on-light--active:hover,
+.link-on-light--active:focus,
+.link-on-light--active:active {
+  color: #323232;
+}
+
+.link-on-light:hover,
+.link-on-light:focus {
+  color: #e84d37;
+}
+
+.link-on-light:active {
+  color: #c81d47;
+}
